@@ -11,7 +11,7 @@ library(Seurat)
 install.packages("reticulate")
 library(reticulate)
 
-raw_data = "03_PB22903.txt"
+raw_data = "10_PB27769.txt"
 r_data <- read.table(raw_data, sep="\t", header=T,row.names = NULL)
 r_data <- as.matrix(r_data)
 # Check data and data column names -- for this script to work, the first row must be the column names
